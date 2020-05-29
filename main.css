@@ -1,0 +1,675 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(
+      rgba(255, 233, 244, 0.233),
+      rgba(228, 228, 228, 0.445)
+    ),
+    url(./img/main-bg.png);
+  line-height: 1.7;
+  font-size: 1.1em;
+  color: grey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(56, 56, 56);
+  text-transform: capitalize;
+}
+
+.personal {
+  font-size: 15px;
+  color: rgb(138, 134, 134);
+  font-weight: 100;
+}
+
+.personal a {
+  text-decoration: none;
+}
+
+/* nav styles */
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(245, 210, 164, 0.246);
+  margin-bottom: 2em;
+}
+
+#logo {
+  margin: 1em 0 0 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 5px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: rgb(53, 39, 39);
+  font-size: 0.9em;
+  padding: 0.3em;
+}
+
+nav li a:hover {
+  background: burlywood;
+  padding: 0.3em;
+  color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+/* home page */
+.wrapper {
+  padding: 2em;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* covid motivation img */
+.covid-motivation {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  top: 25%;
+}
+
+.covid-motivation img {
+  width: 100%;
+}
+
+/* covid prevention img */
+.covid-prevention {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  top: 25%;
+}
+.covid-prevention img {
+  width: 100%;
+}
+
+.post-card {
+  width: 60%;
+  margin: 0 auto;
+  background: rgba(223, 223, 223, 0.466);
+  padding: 0 0 0.7em 0;
+  box-shadow: 0 0 30px rgb(194, 194, 194);
+  border-radius: 0 0 5px 5px;
+}
+
+.post-card h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.7em;
+  text-decoration: underline chocolate;
+}
+
+.post-card img {
+  width: 100%;
+  height: 300px;
+}
+
+.post-card p {
+  text-align: center;
+  padding: 0 3em;
+  /* background-color: khaki; */
+}
+
+.post-details {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  color: rgb(158, 158, 158);
+}
+
+/* end of home page */
+/* end of nav */
+
+.about-me {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main-article-1 {
+  width: 70%;
+  margin-right: auto;
+}
+
+.main-article-1 img {
+  width: 100%;
+  height: 350px;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+}
+.author {
+  margin: 2em 0;
+}
+.author ul {
+  display: flex;
+  background: rgba(211, 211, 211, 0.26);
+  padding: 1.5em;
+  list-style-type: none;
+}
+
+.author li img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  align-self: center;
+  margin-right: 20px;
+}
+
+/* user */
+.user {
+  margin: 2em 0;
+}
+.user {
+  display: flex;
+  padding: 1em;
+  list-style-type: none;
+}
+
+.user li {
+  align-self: center;
+  margin-right: 20px;
+}
+
+/* comment */
+
+.comments {
+  margin: 2em 0;
+}
+
+.comment-details {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+.comment-details .user-name {
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.comment-details .reply {
+  margin-left: auto;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.add-comment textarea,
+.add-comment form input {
+  width: 100%;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid brown;
+  border-radius: 0.3em;
+}
+
+.add-comment {
+  margin-top: 50px;
+}
+
+form input {
+  padding: 1em 0.5em;
+}
+
+form textarea {
+  padding-left: 0.5em;
+}
+
+.name-mail {
+  display: flex;
+}
+
+.name-mail input {
+  width: 100%;
+}
+
+.name-mail input:nth-child(2) {
+  margin-left: 15px;
+}
+
+#comment-box {
+  resize: vertical;
+  padding: 1em 0;
+}
+#submit,
+.submit {
+  border: none;
+  background-color: brown;
+  color: white;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* social media */
+
+.social-media {
+  display: flex;
+  list-style-type: none;
+
+  justify-content: center;
+}
+
+.social-media li {
+  padding: 0 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/* search */
+.search-section {
+  background: rgba(209, 209, 209, 0.37);
+  padding: 1em;
+  width: 100%;
+}
+
+.search-bar {
+  background-color: white;
+}
+
+.search-btn {
+  background: brown;
+  color: white;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.search input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.search section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(192, 192, 192, 0.555);
+  padding: 0 0.6em;
+}
+
+/* end of search */
+
+/* subscribe */
+.subscribe-section {
+  background: rgba(209, 209, 209, 0.37);
+  padding: 1em;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribe section {
+  width: 100%;
+}
+
+.subscribe input {
+  border: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-right: 0;
+}
+/* end of subscribe */
+
+aside {
+  width: 40%;
+  margin-left: 29px;
+}
+
+/* recommended post */
+.recommended-post {
+  background-color: rgba(219, 219, 219, 0.301);
+  padding: 0.3em 1em 1em 1em;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.post {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
+
+.post img {
+  margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  align-self: center;
+}
+
+.post p span {
+  font-size: 14px;
+  color: grey;
+}
+
+/* about me */
+.about-page {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: 4em auto;
+}
+
+.about-page h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.about-page span,
+.about-page p {
+  font-size: 1.5em;
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.about-page a {
+  font-size: 1.3em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: brown;
+  padding: 0.5em;
+  margin-top: 20px;
+  color: white;
+}
+
+.about-page a:hover {
+  background-color: green;
+}
+
+/* contact section */
+
+.contact-form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.contact-form input {
+  width: 100%;
+  border: 1px solid brown;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.contact-form input:nth-child(2) {
+  margin: 0 5px;
+}
+
+.contact-form-container textarea {
+  width: 100%;
+  border: 1px solid brown;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding-top: 1em;
+}
+
+#contact-submit {
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: brown;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* end of contact section */
+
+/* footer */
+.footer {
+  padding: 1em;
+  background-color: rgba(245, 210, 164, 0.246);
+  text-align: center;
+}
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: rgb(0, 162, 255);
+}
+.fa-linkedin {
+  background-color: blue;
+  color: white;
+}
+.fa-github {
+  color: black;
+}
+
+/* MEDIA QUERY */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* home page */
+  .wrapper {
+    padding: 2em;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* covid motivation img */
+  .covid-motivation {
+    display: none;
+  }
+
+  /* covid prevention img */
+  .covid-prevention {
+    display: none;
+  }
+
+  .post-card {
+    width: 80%;
+  }
+
+  .post-details {
+    justify-content: space-evenly;
+  }
+  /* end of home page */
+
+  .about-me {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .main-article-1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* contact */
+  .contact-form-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-page {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 4em auto;
+  }
+
+  .about-page h1 {
+    font-size: 3em;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* home page */
+  .wrapper {
+    padding: 2em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* covid motivation img */
+  .covid-motivation {
+    display: none;
+  }
+
+  /* covid prevention img */
+  .covid-prevention {
+    display: none;
+  }
+
+  .post-card {
+    width: 90%;
+  }
+
+  .post-details {
+    justify-content: space-around;
+  }
+  /* end of home page */
+
+  .about-me {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-article-1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    display: block;
+    margin-bottom: 0;
+  }
+  .contact-form input {
+    margin-bottom: 10px;
+  }
+
+  .contact-form input:nth-child(2) {
+    margin: 0 0 10px 0;
+  }
+
+  .about-page {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 4em auto;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* home page */
+  .wrapper {
+    padding: 0.2em;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* covid motivation img */
+  .covid-motivation {
+    display: none;
+  }
+
+  /* covid prevention img */
+  .covid-prevention {
+    display: none;
+  }
+
+  .post-card {
+    width: 95%;
+  }
+
+  .post-details {
+    justify-content: space-around;
+    /* flex-direction: column; */
+  }
+  /* end of home page */
+
+  .about-me {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-article-1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  aside {
+    width: 96%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    display: block;
+    margin-bottom: 0;
+  }
+  .contact-form input {
+    margin-bottom: 10px;
+  }
+
+  .contact-form input:nth-child(2) {
+    margin: 0 0 10px 0;
+  }
+
+  .about-page {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 4em auto;
+  }
+
+  .prev-next {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
