@@ -10,17 +10,22 @@
   <body>
     <header>
       <nav>
-        <a href="index.html"
-          ><img src="./img/Logo.png" alt="Logo" id="logo"
-        /></a>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <figure>
+          <a href="index.html"
+            ><img src="./img/Logo.png" alt="Logo" id="logo"
+          /></a>
+        </figure>
+        <section class="menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Me</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </section>
       </nav>
     </header>
-    <h1 style="text-align: center;">who is nathan ❓</h1>
+    <section class="breadcrumb">
+      <h1>who is nathan ❓</h1>
+      <p><a href="index.html">Home</a> / Who Is Nathan?</p>
+    </section>
     <!-- container -->
     <main class="container">
       <section class="about-me">
@@ -32,7 +37,8 @@
             >
           </figcaption>
           <h2>
-            Who is Nathan? is the most popular question on the internet today 😀
+            Who is Nathan? is the most popular question on the internet today
+            (kidding) 😀
           </h2>
           <!-- tagged -->
           <section class="tagged">
@@ -78,9 +84,12 @@
           <h4>Introduction:</h4>
           <p>
             Hey, I'm Nathan Jumntan ( or "Jumns" Unofficially). I'm from Taraba
-            State, Nigeria, Africa. I'm currently base in Ogun State (
-            precisely; Ibafo, near Lagos).
+            State, Nigeria, Africa. I'm currently base in Lagos State.
           </p>
+          <blockquote>
+            Oh Life! You are so beautiful, a bit complicated but still
+            beautiful. There's no way I was just born to pay bills and die.
+          </blockquote>
           <h4>Growing Up 🤠</h4>
           <p>
             Growing up, my parents (mostly my dad) wanted me to study MBBS.
@@ -278,35 +287,34 @@
     </main>
     <section class="footer">
       <p>&copy;2020 Nathan</p>
-
-      <ul class="social-media">
-        <li>
+      <section class="social-media">
+        <section>
           <a
             href="https://web.facebook.com/profile.php?id=100006975976960"
             target="_blank"
           >
             <i class="fab fa-facebook"></i
           ></a>
-        </li>
-        <li>
+        </section>
+        <section>
           <a href="https://twitter.com/Mr_Jumns" target="_blank">
             <i class="fab fa-twitter"></i
           ></a>
-        </li>
-        <li>
+        </section>
+        <section>
           <a
             href="https://www.linkedin.com/in/nathan-jumns-1210801aa/"
             target="_blank"
           >
             <i class="fab fa-linkedin"></i
           ></a>
-        </li>
-        <li>
+        </section>
+        <section>
           <a href="https://github.com/Jumns" target="_blank">
             <i class="fab fa-github"></i
           ></a>
-        </li>
-      </ul>
+        </section>
+      </section>
     </section>
   </body>
 </html>

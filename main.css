@@ -9,11 +9,23 @@ body {
     url(./img/main-bg.png);
   line-height: 1.7;
   font-size: 1.1em;
-  color: grey;
+  color: rgb(75, 72, 72);
 }
 
 * {
   box-sizing: border-box;
+}
+
+.breadcrumb {
+  text-align: center;
+  margin-top: 5px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.breadcrumb p {
+  margin-top: 0;
+  font-size: 0.8em;
 }
 
 h1,
@@ -40,42 +52,34 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(245, 210, 164, 0.246);
-  margin-bottom: 2em;
+  background-color: rgba(246, 135, 115, 0.452);
 }
 
 #logo {
-  margin: 1em 0 0 3em;
+  width: 150px;
 }
 
-nav ul {
+nav .menu {
   list-style-type: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
+  /* background-color: greenyellow; */
 }
 
-nav li {
-  margin: 5px;
-}
-
-nav li a {
+nav .nav-link {
   text-decoration: none;
   color: rgb(53, 39, 39);
-  font-size: 0.9em;
-  padding: 0.3em;
+  margin: 1em 7px;
 }
-
-nav li a:hover {
-  background: burlywood;
-  padding: 0.3em;
+.nav-link:hover {
   color: white;
-  box-shadow: 0 0 10px gray;
 }
+/* end of nav */
 
 /* home page */
 .wrapper {
   padding: 2em;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -84,11 +88,12 @@ nav li a:hover {
   width: 250px;
   position: fixed;
   left: 0;
-  top: 25%;
+  top: 30%;
 }
 
 .covid-motivation img {
   width: 100%;
+  box-shadow: 0 0 10px gray;
 }
 
 /* covid prevention img */
@@ -96,7 +101,8 @@ nav li a:hover {
   width: 250px;
   position: fixed;
   right: 0;
-  top: 25%;
+  top: 30%;
+  box-shadow: 0 0 10px gray;
 }
 .covid-prevention img {
   width: 100%;
@@ -105,22 +111,22 @@ nav li a:hover {
 .post-card {
   width: 60%;
   margin: 0 auto;
-  background: rgba(223, 223, 223, 0.466);
+  background: rgba(251, 245, 240, 0.911);
   padding: 0 0 0.7em 0;
-  box-shadow: 0 0 30px rgb(194, 194, 194);
+  box-shadow: 0 0 20px gray;
   border-radius: 0 0 5px 5px;
 }
 
 .post-card h2 {
   text-align: center;
   margin: 0;
-  font-size: 1.7em;
+  font-size: 1.3em;
   text-decoration: underline chocolate;
 }
 
 .post-card img {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .post-card p {
@@ -137,12 +143,17 @@ nav li a:hover {
 }
 
 /* end of home page */
-/* end of nav */
 
 .about-me {
   display: flex;
   width: 80%;
   margin: 0 auto;
+}
+
+blockquote {
+  background-color: rgba(255, 192, 203, 0.746);
+  padding: 0.5em;
+  border-left: 0.4em solid black;
 }
 
 .main-article-1 {
@@ -152,7 +163,7 @@ nav li a:hover {
 
 .main-article-1 img {
   width: 100%;
-  height: 350px;
+  height: 210px;
 }
 
 .prev-next {
@@ -205,7 +216,7 @@ nav li a:hover {
 }
 .comment-details .user-name {
   text-decoration: none;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
 }
 
 .comment-details .reply {
@@ -227,12 +238,14 @@ nav li a:hover {
   margin-top: 50px;
 }
 
-form input {
+form input,
+form textarea {
   padding: 1em 0.5em;
+  font-family: sans-serif;
 }
 
 form textarea {
-  padding-left: 0.5em;
+  padding: 0.5em;
 }
 
 .name-mail {
@@ -266,14 +279,13 @@ form textarea {
 .social-media {
   display: flex;
   list-style-type: none;
-
   justify-content: center;
 }
 
-.social-media li {
-  padding: 0 0.5em;
+.social-media a {
+  margin: 0 0.5em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 
 /* search */
@@ -442,9 +454,12 @@ aside {
 
 /* footer */
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1em;
   background-color: rgba(245, 210, 164, 0.246);
-  text-align: center;
+  /* text-align: center; */
 }
 .fa-facebook {
   color: blue;
@@ -482,10 +497,11 @@ aside {
   }
 
   .post-card {
-    width: 80%;
+    width: 70%;
   }
 
   .post-details {
+    font-size: 16px;
     justify-content: space-evenly;
   }
   /* end of home page */
@@ -546,11 +562,13 @@ aside {
   }
 
   .post-card {
-    width: 90%;
+    width: 75%;
   }
 
   .post-details {
+    font-size: 15px;
     justify-content: space-around;
+    flex-direction: column;
   }
   /* end of home page */
 
@@ -603,7 +621,7 @@ aside {
   .wrapper {
     padding: 0.2em;
     width: 100%;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   /* covid motivation img */
@@ -617,12 +635,13 @@ aside {
   }
 
   .post-card {
-    width: 95%;
+    width: 80%;
   }
 
   .post-details {
+    font-size: 15px;
     justify-content: space-around;
-    /* flex-direction: column; */
+    flex-direction: column;
   }
   /* end of home page */
 
@@ -671,5 +690,20 @@ aside {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+  }
+  /* comment details */
+  .comment-details {
+    align-items: center;
+    margin: 0 auto;
+    /* font-size: 12px; */
+  }
+  .comment-details .user-name,
+  .comment-details .reply {
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+
+  .comment-details .reply {
+    margin-left: auto;
   }
 }
