@@ -172,6 +172,7 @@ blockquote {
 }
 .author {
   margin: 2em 0;
+  box-shadow: 0 0 10px grey;
 }
 .author ul {
   display: flex;
@@ -191,6 +192,7 @@ blockquote {
 /* user */
 .user {
   margin: 2em 0;
+  box-shadow: 0 0 10px grey;
 }
 .user {
   display: flex;
@@ -262,7 +264,7 @@ form textarea {
 
 #comment-box {
   resize: vertical;
-  padding: 1em 0;
+  padding-left: 0.5;
 }
 #submit,
 .submit {
@@ -293,6 +295,7 @@ form textarea {
   background: rgba(209, 209, 209, 0.37);
   padding: 1em;
   width: 100%;
+  box-shadow: 0 0 10px grey;
 }
 
 .search-bar {
@@ -328,6 +331,7 @@ form textarea {
   padding: 1em;
   width: 100%;
   margin-top: 20px;
+  box-shadow: 0 0 10px grey;
 }
 
 .subscribe section {
@@ -354,6 +358,7 @@ aside {
   padding: 0.3em 1em 1em 1em;
   margin-top: 20px;
   width: 100%;
+  box-shadow: 0 0 10px grey;
 }
 
 .post {
@@ -613,6 +618,14 @@ aside {
     align-items: center;
     margin: 4em auto;
   }
+  .name-mail {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .name-mail input:nth-child(2) {
+    margin-left: 0;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -636,6 +649,10 @@ aside {
 
   .post-card {
     width: 80%;
+  }
+
+  .post-card h2 {
+    padding: 0.5em 2em;
   }
 
   .post-details {
@@ -705,5 +722,17 @@ aside {
 
   .comment-details .reply {
     margin-left: auto;
+  }
+
+  .name-mail {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .name-mail input:nth-child(2) {
+    margin-left: 0;
+  }
+  .featured {
+    font-size: 1.5em;
   }
 }
